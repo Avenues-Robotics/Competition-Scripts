@@ -79,7 +79,7 @@ public class AutonomousMode03 extends LinearOpMode {
                 motorL.setPower(-1);
                 sleep(700);
 
-                // Marker Placement
+            // Marker Placement
             leftPower = .4;
             rightPower = .4;
             if(sensorRangeR.getDistance(DistanceUnit.CM) - sensorRangeL.getDistance(DistanceUnit.CM) > error);
