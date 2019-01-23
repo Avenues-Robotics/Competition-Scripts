@@ -89,7 +89,7 @@ public class AutonomousMode04 extends LinearOpMode {
             */
            
            
-            // Elevator Code
+            // Elevator Deployment
             if (t < 200) {
                 
                 // Release Mechanism
