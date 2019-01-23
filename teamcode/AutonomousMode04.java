@@ -34,7 +34,7 @@ public class AutonomousMode04 extends LinearOpMode {
 
     // Declare OpMode members
     private ElapsedTime runtime = new ElapsedTime();
-    DcMotor motorR, motorL, motorLift;
+    DcMotor motorR, motorL, motorU;
     double leftPower, rightPower;
     Servo hookLock, servo4;
     double t = 0;
@@ -53,7 +53,7 @@ public class AutonomousMode04 extends LinearOpMode {
         motorR = hardwareMap.get(DcMotor.class, "right_drive");
         motorL = hardwareMap.get(DcMotor.class, "left_drive");
         motorL.setDirection(DcMotorSimple.Direction.REVERSE); // revesed b/c of mirror
-        motorLift = hardwareMap.get(DcMotor.class, "motor_lift");
+        motorU = hardwareMap.get(DcMotor.class, "motor_lift");
 
         // Servos
             //hookLock = hardwareMap.get(Servo.class, "servo3");
@@ -94,7 +94,7 @@ public class AutonomousMode04 extends LinearOpMode {
                 
                 // Release Mechanism
                 t = t + 1;
-                motorLift.setPower(-1);
+                motorU.setPower(-1);
                 sleep(700);
 
             }
