@@ -90,8 +90,9 @@ public class AutonomousMode04 extends LinearOpMode {
            
            
             // Elevator Deployment
+           hookLock.setPosition(0); 
             if (t < 200) {
-                
+
                 // Release Mechanism
                 t = t + 1;
                 motorU.setPower(-1);
